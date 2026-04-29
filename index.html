@@ -33,6 +33,25 @@
       position: relative;
     }
 
+    .cta-buttons {
+      margin-top: 20px;
+    }
+
+    .cta-buttons button {
+      margin: 10px;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 6px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .cta-buttons button:hover {
+      background: #1e8449;
+    }
+
     section {
       padding: 40px;
       max-width: 1000px;
@@ -50,20 +69,6 @@
       color: white;
       text-align: center;
       padding: 20px;
-    }
-
-    button {
-      padding: 14px 28px;
-      font-size: 16px;
-      border-radius: 6px;
-      background: #27ae60;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #1e8449;
     }
 
     .cards {
@@ -106,7 +111,11 @@
 <header>
   <h1>JAY Fencing INC.</h1>
   <p>Quality Fences Built to Last</p>
-  <button onclick="location.href='#contact'">Get a Free Quote</button>
+
+  <div class="cta-buttons">
+    <button onclick="location.href='tel:13235551234'">📞 Call Now</button>
+    <button onclick="location.href='sms:13235551234'">💬 Text Us</button>
+  </div>
 </header>
 
 <section>
@@ -117,8 +126,8 @@
 <section class="services">
   <h2>Our Services</h2>
   <div class="cards">
-    <div class="card">Vinyl Fencing</div>
     <div class="card">Wood Fencing</div>
+    <div class="card">Vinyl Fencing</div>
     <div class="card">Chain Link Fencing</div>
     <div class="card">Fence Repair</div>
   </div>
